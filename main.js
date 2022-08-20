@@ -62,7 +62,12 @@ function draw(){
 
  if(game_status == "start") {
 
- 
+ if(scoreRightWrist > 0.2) {
+  fill('#ff0000');
+  stroke('#800000');
+  circle(rightWristX, rightWristY, 20);
+ }
+
  background(0); 
 
  image(video, 0, 0, 700, 600);
